@@ -1,0 +1,132 @@
+.container {
+    background-color: #FFFBEE;
+    padding: 21px 41px;
+}
+
+.topContent {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.topLeft {
+    width: 45vw;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.line {
+    margin-top: 20px;
+    width: 95%;
+    border: 1px solid black;
+}
+
+.topRight {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+
+    .topContent {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .topLeft {
+        width: 100%;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .line {
+        margin: 20px auto;
+    }
+
+    .topRight {
+        width: 100%;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 21px;
+    }
+
+    .topContent {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .topLeft {
+        width: 100%;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .line {
+        margin: 20px auto;
+    }
+
+    .topRight {
+        width: 100%;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding: 21px 41px;
+    }
+
+    .topContent {
+        grid-template-columns: 45vw auto;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .topLeft {
+        font-size: 50px;
+        line-height: 61px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .line {
+        margin: 20px 0;
+    }
+
+    .topRight {
+        font-size: 40px;
+        line-height: 49px;
+        text-align: right;
+    }
+}

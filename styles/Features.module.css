@@ -1,0 +1,215 @@
+.container {
+    /* height: 120vh; */
+    padding: 21px 41px;
+}
+
+.topContent {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topLeft {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    width: 50%;
+}
+
+.line {
+    margin-top: 20px;
+    width: 85%;
+    border: 1px solid black;
+}
+
+.topRight {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    width: 50%;
+}
+
+
+/* bottom content */
+.bottomContent {
+    margin-top: 60px;
+    border-radius: 20px;
+    background-color: #EBEBEB;
+    /* height: 80vh; */
+    padding: 41px 41px;
+    display: flex;
+    align-items: center;
+    justify-items: end;
+    grid: auto / 40vw auto;
+}
+
+.bottomLeft {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.rightImg {
+    width: 40vw;
+    height: auto;
+    right: 0;
+    margin-right: 0px;
+}
+
+
+
+
+
+/* For mobile devices (max-width: 767px): */
+@media only screen and (max-width: 480px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .topContent {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topLeft {
+        font-size: 26px;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .topRight {
+        font-size: 20px;
+        width: 100%;
+        text-align: justify;
+        margin-top: 20px;
+    }
+
+    .bottomContent {
+        margin-top: 40px;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .bottomLeft {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .rightImg {
+        margin-top: 20px;
+        width: 80vw;
+    }
+}
+
+/* For tablet devices (max-width: 1023px): 
+ */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .topContent {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topLeft {
+        font-size: 36px;
+        line-height: 44px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .topRight {
+        font-size: 20px;
+        line-height: 25px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .bottomContent {
+        margin-top: 40px;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .bottomLeft {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .rightImg {
+        margin-top: 20px;
+        width: 60vw;
+    }
+}
+
+/* For laptop devices (min-width: 1024px):*/
+@media only screen and (min-width: 1024px) {
+
+    .container {
+        padding: 40px;
+    }
+
+    .topContent {
+        height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .topLeft {
+        font-size: 50px;
+        line-height: 61px;
+        width: 50%;
+        text-align: left;
+    }
+
+    .line {
+        width: 85%;
+    }
+
+    .topRight {
+        font-size: 25px;
+        line-height: 30px;
+        width: 50%;
+        text-align: right;
+    }
+
+    .bottomContent {
+        margin-top: 60px;
+        padding: 41px;
+        display: grid;
+        grid-template-columns: 40vw auto;
+        grid-gap: 20px;
+    }
+
+    .bottomLeft {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .rightImg {
+        width: 40vw;
+        margin-right: 0;
+    }
+}

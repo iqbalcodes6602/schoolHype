@@ -1,0 +1,185 @@
+.container {
+  background-color: black;
+  min-height: 150vh;
+  color: white;
+  border-radius: 0px 0px 0px 100px;
+}
+
+.navbar {
+  padding: 22px 41px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLeft {
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  width: 20%;
+}
+
+.navCenter {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.navRight {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links {
+  cursor: pointer;
+  margin-right: 20px;
+  font-weight: 300;
+}
+
+.getStartedButton {
+  cursor: pointer;
+  background-color: #7ceda1;
+  border-radius: 10px;
+  width: 159px;
+  height: 43px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+/* main section */
+.main {
+  padding: 0px 41px;
+  margin-top: 100px;
+  display: flex;
+  justify-items: end;
+}
+
+.mainLeft {
+  word-wrap: break-word;
+}
+
+.tagline {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 85px;
+  color: #ffffff;
+}
+
+.belowTagLines {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.watchDemo {
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 41px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  width: 159px;
+  height: 43px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+
+.leftImg {
+  width: 40vw;
+  height: auto;
+  right: 0;
+  margin-right: 0px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .navbar {
+    padding: 15px;
+  }
+
+  .navLeft {
+    font-size: 16px;
+  }
+
+  .navCenter {
+    width: 70%;
+  }
+
+  .navRight {
+    width: 30%;
+  }
+
+  .getStartedButton {
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .watchDemo {
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .main {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+
+  .leftImg {
+    width: 80%;
+    margin: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+}
+
+/* Media queries for mobile screens */
+
+@media only screen and (max-width: 480px) {
+
+  .container{
+    min-height: 60vh;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLeft {
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .navCenter {
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-around;
+  }
+
+  .navRight {
+    width: auto;
+    justify-content: center;
+  }
+
+  .tagline{
+    margin-top: -50px;
+    line-height: 50px;
+    font-size: 40px;
+  }
+
+  .links {}
+}
