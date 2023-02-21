@@ -6,6 +6,10 @@ import { CiLocationOn } from 'react-icons/ci';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
+    const [username,setUsername] = useState("");
+    const [email,setEmail] = useState("");
+    const [number,setNumber] = useState("");
+    const [message,setMessage] = useState("");
     // const [formValue, setFormValue] = useState({ username: '', email: '', number: '', message: '' })
 
     const handleInput = (e) => {
@@ -28,13 +32,18 @@ function Contact() {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-
+        if(username==="" || email==="" || number==="" || message===""){
+            window.alert("Please fill all the fields");
+            return;
+        }
+        console.log("hello")
         emailjs.sendForm('service_do9zgds', 'template_e5jhlks', form.current, 'dF4J0brR81hi-kHRG')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+        window.alert("Message Sent Succesfully");
         e.target.reset();
     };
 
@@ -104,6 +113,7 @@ function Contact() {
                                 placeholder="Name*"
                                 // value={formValue.username}
                                 // onChange={handleInput}/
+                                onChange={(e)=>{setUsername(e.target.value)}}
                             />
                         </div>
                         <div className={styles.inputGroup}>
@@ -114,6 +124,7 @@ function Contact() {
                                 placeholder="Email*"
                                 // value={formValue.email}
                                 // onChange={handleInput}
+                                onChange={(e)=>{setEmail(e.target.value)}}
                             />
                         </div>
                         <div className={styles.inputGroup}>
@@ -124,6 +135,7 @@ function Contact() {
                                 placeholder="Phone*"
                                 // value={formValue.number}
                                 // onChange={handleInput}
+                                onChange={(e)=>{setNumber(e.target.value)}}
                             />
                         </div>
                         <div className={styles.inputGroup}>
@@ -134,6 +146,7 @@ function Contact() {
                                 placeholder="Message*"
                                 // value={formValue.message}
                                 // onChange={handleInput}
+                                onChange={(e)=>{setMessage(e.target.value)}}
                             />
                         </div>
                         <button className={styles.submitBtn} type="submit">Submit Form</button>
